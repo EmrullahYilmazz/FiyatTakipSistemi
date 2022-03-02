@@ -44,6 +44,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -89,7 +90,8 @@
     <Content Include="assets\js\morris\raphael-2.1.0.min.js" />
     <Content Include="Chart.aspx" />
     <Content Include="Default.aspx" />
-    <Content Include="Entry.aspx" />
+    <Content Include="EntryProduct.aspx" />
+    <Content Include="EntryData.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -107,12 +109,19 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Entry.aspx.cs">
-      <DependentUpon>Entry.aspx</DependentUpon>
+    <Compile Include="EntryProduct.aspx.cs">
+      <DependentUpon>EntryProduct.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Entry.aspx.designer.cs">
-      <DependentUpon>Entry.aspx</DependentUpon>
+    <Compile Include="EntryProduct.aspx.designer.cs">
+      <DependentUpon>EntryProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EntryData.aspx.cs">
+      <DependentUpon>EntryData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EntryData.aspx.designer.cs">
+      <DependentUpon>EntryData.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

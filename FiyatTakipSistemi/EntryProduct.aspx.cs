@@ -11,11 +11,10 @@ using System.Data.SqlClient;
 
 namespace FiyatTakipSistemi
 {
-    public partial class Chart : System.Web.UI.Page
+    public partial class Entry : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-        }
+                   }
     }
 }

@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="FiyatTakipSistemi.Default" %>
 
+<%@ Register Assembly="System.Web.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Namespace="System.Web.UI.DataVisualization.Charting" TagPrefix="asp" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -59,8 +61,11 @@ font-size: 16px;"> &nbsp;&nbsp; <a href="#" class="btn btn-danger square-btn-adj
                     </li>	
                      
                     <li  >
-                        <a  href="Entry.aspx"><i class="fa fa-edit fa-3x"></i>Veri Girişi</a>
-                    </li>				
+                        <a  href="EntryProduct.aspx"><i class="fa fa-edit fa-3x"></i>Ürün Ekle</a>
+                    </li>	
+                     <li  >
+                        <a  href="EntryData.aspx"><i class="fa fa-table fa-3x"></i>Veri Ekle</a>
+                    </li>
 					
 					                   
                    
@@ -75,15 +80,21 @@ font-size: 16px;"> &nbsp;&nbsp; <a href="#" class="btn btn-danger square-btn-adj
                 <div class="row">
                     <div class="col-md-12">
                      <h2>Hoşgeldiniz</h2>   
-                        <h5>&nbsp;</h5>
+                        <h4>Fiyat Takip Sistemi Nedir?</h4>
+                        
+                        <p><strong>Fiyat Takip Sistemi,</strong> belirlenen ürünün fiyatının düzenli zaman aralıklarında hareketeni takip etmenize yarayan bir sistemdir.
+                            Sistemde ürünlerin fiyat hareketlerini görebilmenizi sağlayan grafikler mevcuttur. Grafiklere daha kolay erişebilmeniz için takip etmek istediğiniz ürünün etiketinde olan QR kodunu okutabilirsiniz.
+                        </p>
+                        <p>
+                            Fiyat takibi yapmaktaki asıl amaç, mal ya da hizmetin gerçek fiyatlarını tespit etmektir. Fiyat takibi, firmaların internet sayfasındaki fiyatları üzerinden de yapılabilmektedir. Müşteri için de fiyat araştırması yaparak alışveriş yapmak karlı bir iştir. 
+                            Bu yüzden birçok kişi alışveriş yapmadan önce, istediği ürünle alakalı fiyat araştırması ve karşılaştırmalar yapmaktadır.
+                            Fiyat takibi yaparken önemli olan diğer bir unsur ise enflasyondur.
+                            Enflasyon, mal ve hizmetlere dair fiyat düzeyinin yükselmesi sebebi ile paranın satın alma gücünde meydana gelen düşüşü ifade eder. Burada etkileyici unsur sadece belirli mal ya da hizmetlerin fiyatlarında meydana gelen artış değil, mal ve hizmetlerin genel fiyat düzeyinin artış göstermesi sonucu alım gücünde meydana gelen azalmadır. 
+                        </p>
                     </div>
                 </div>              
                  <!-- /. ROW  -->
-                  <hr />
-                <div class="row">
-			</div>
                  <!-- /. ROW  -->
-                <hr />                
                  <!-- /. ROW  -->
                 <div class="row"> 
                     
@@ -91,11 +102,22 @@ font-size: 16px;"> &nbsp;&nbsp; <a href="#" class="btn btn-danger square-btn-adj
                                <div class="auto-style1">                     
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Bar Chart Example
-                        </div>
-                        <div class="panel-body">
-                            <div id="morris-bar-chart"></div>
-                        </div>
+                            Türkiye&#39;de Enflasyon</div>
+                        <center><div class="panel-body">
+                            <asp:Chart ID="Chart1" runat="server" Height="440px" Width="913px" BackColor="Black" BackGradientStyle="Center" Palette="None" PaletteCustomColors="201, 0, 0">
+                                <Series>
+                                    <asp:Series Name="Enflasyon" YValuesPerPoint="2"></asp:Series>
+                                </Series>
+                                <Legends>
+        <asp:Legend Alignment="Center" Docking="Bottom" IsTextAutoFit="False" Name="Default"
+            LegendStyle="Row" />
+    </Legends>
+                                <ChartAreas>
+                                    <asp:ChartArea Name="ChartArea1"></asp:ChartArea>
+                                </ChartAreas>
+                            </asp:Chart>
+                           
+                        </div></center>
                     </div>            
                 </div>
                 
@@ -136,7 +158,7 @@ font-size: 16px;"> &nbsp;&nbsp; <a href="#" class="btn btn-danger square-btn-adj
      <script src="assets/js/morris/raphael-2.1.0.min.js"></script>
     <script src="assets/js/morris/morris.js"></script>
       <!-- CUSTOM SCRIPTS -->
-    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/custom.js"></script>ript>
     
    
     </form>

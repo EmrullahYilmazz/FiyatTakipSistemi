@@ -34,7 +34,7 @@
   <div style="color: white;
 padding: 15px 50px 5px 50px;
 float: right;
-font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-danger square-btn-adjust">Logout</a> </div>
+font-size: 16px;"> &nbsp; <a href="#" class="btn btn-danger square-btn-adjust">Logout</a> </div>
         </nav>   
            <!-- /. NAV TOP  -->
                 <nav class="navbar-default navbar-side" role="navigation">
@@ -54,8 +54,11 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
                     </li>	
                       
                     <li  >
-                        <a  href="Entry.aspx"><i class="fa fa-edit fa-3x"></i>Veri Girişi</a>
+                        <a  href="EntryProduct.aspx"><i class="fa fa-edit fa-3x"></i>Ürün Ekle</a>
                     </li>				
+                     <li  >
+                        <a  href="EntryData.aspx"><i class="fa fa-table fa-3x"></i> Veri Ekle</a>
+                    </li>
 					
 					                   
                     
