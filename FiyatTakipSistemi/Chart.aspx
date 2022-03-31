@@ -36,7 +36,7 @@ padding: 15px 50px 5px 50px;
 float: right;
 font-size: 16px;"> &nbsp; <a href="#" class="btn btn-danger square-btn-adjust">Logout</a> </div>
         </nav>   
-           <!-- /. NAV TOP  -->
+           <!-- /. NAV TOP IN THE DESIGN -->
                 <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
@@ -67,7 +67,7 @@ font-size: 16px;"> &nbsp; <a href="#" class="btn btn-danger square-btn-adjust">L
             </div>
             
         </nav>  
-        <!-- /. NAV SIDE  -->
+        <!-- /. NAV SIDE IN THE DESIGN  -->
         <div id="page-wrapper" >
             <div id="page-inner">
                 <div class="row">
